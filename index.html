@@ -1,1 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cole Bennett | Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top">CB</a>
+    <nav class="links">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="btn small" type="button">Dark</button>
+    </nav>
+  </header>
 
+  <main id="top" class="container">
+    <section class="hero">
+      <div>
+        <h1>Cole Bennett</h1>
+        <p class="subtitle">CS @ Colby • Web / Systems / Music-tech</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn ghost" href="assets/resume/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </div>
+        <div class="meta">
+          <a href="https://github.com/colewbennett" target="_blank" rel="noreferrer">GitHub</a>
+          <span>•</span>
+          <a href="mailto:cole@example.com">cole@example.com</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Now</h2>
+        <ul>
+          <li>Building: MuleBay marketplace (Flask)</li>
+          <li>Working with: Quartus / VHDL / CPU projects</li>
+          <li>Side quest: CD/music data + tooling</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <article class="card project">
+          <h3>MuleBay</h3>
+          <p>Campus marketplace web app focused on reuse + sustainability.</p>
+          <p class="tags">Flask • SQLAlchemy • HTML/CSS</p>
+          <div class="row">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>Assembler + CPU</h3>
+          <p>2-pass assembler in Python targeting a custom CPU design.</p>
+          <p class="tags">Python • ISA • Quartus</p>
+          <div class="row">
+            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>RBF Neural Net (MNIST)</h3>
+          <p>RBF hidden layer + supervised classifier for digit recognition.</p>
+          <p class="tags">NumPy • ML • K-means</p>
+          <div class="row">
+            <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="card">
+        <p>
+          I’m a CS student who likes building practical web apps and low-level systems projects.
+          I also care a lot about music + tooling, so I’m always combining code with sound/data.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="card row space">
+        <div>
+          <p><strong>Email:</strong> <span id="emailText">cole@example.com</span></p>
+          <p class="muted">Click to copy (and it’ll show a tiny confirmation).</p>
+        </div>
+        <button id="copyEmailBtn" class="btn" type="button">Copy email</button>
+      </div>
+      <p id="toast" class="toast" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Cole Bennett</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
