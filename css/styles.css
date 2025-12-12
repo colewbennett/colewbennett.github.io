@@ -1,4 +1,13 @@
 :root{
+  --bg:#ffffff;
+  --panel:#f5f7fb;
+  --text:#111827;
+  --muted:#4b5563;
+  --accent:#4f46e5;
+  --border:#e5e7eb;
+}
+
+body.dark{
   --bg:#0b0c10;
   --panel:#12141a;
   --text:#e8eaf0;
